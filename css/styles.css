@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*  {
+    font-family: 'Roboto', sans-serif; 
+    box-sizing: border-box;
+    text-align: center;
+}
+ul{
+    padding-left: 0;
+}
+main {
+    background: white;
+}
+
+
+li{
+    color:blue;
+    padding: 10px;
+    display: block;
+    margin: 10px;
+  } 
+
+.paragraph {
+    font-size: 21px;
+    padding-bottom: 10%;
+}
+
+    
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #57a3ff, #ffcccc);
+    animation: gradient 10s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+
+}
+
+
+header {
+      padding: .5em 0;
+      padding-bottom: 20px;
+   } 
+
+  img {
+      max-width: 100%;
+  }
+
+
+
+ 
+  .top {
+    text-transform: uppercase;
+  }
+
+
+  ul {
+      list-style: none;
+      justify-content: space-between;
+  }
+
+  a {
+      text-decoration: none;
+      font-family: 'Pacifico', cursive;
+
+  }
+
+  a:hover{
+    color: blueviolet;
+
+  }
+
+  footer {
+    padding-top: 20px;
+    left: 0;
+    right: 0;
+    
+  }
+
+  .footer-nav {
+    display: flex;
+  }
+
+
+  .top {
+      padding-right: 12px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+
+  .header-name {
+      font-family: "Style Script";
+      font-size: 32px;
+  }
+
+
+
+
+.color {
+    color: red;
+}
+
+.footer-name{
+    margin-top: 0;
+    margin-left: 20px;
+}
+.sub-footer2{
+    display: none;
+}
+.sub-footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#portfolio{
+    background-color: #CD7DB2;
+
+}
+
+
+/* 768px */
+
+  @media screen and (min-width: 768px) {
+    .main-header, 
+    .main-nav,
+    .row,
+    .paragraph,
+    .header-image {
+        display: flex;
+    }
+    #my-goals:hover{
+        align-content: center;
+        margin: 0;
+        padding: 0; 
+        flex-wrap: wrap; 
+        animation: mymove 5s ;
+    }
+    @keyframes mymove {
+        50% {
+            transform: rotate(180deg);
+        }
+      }
+
+    .sub-footer2,
+    .footer-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sub-nav{
+        padding: 0 20px;
+    }
+    .footer-name2{
+        margin-left: 20px;
+        align-self: center;
+    }
+    .footer-name{
+        display: none;
+    }
+
+
+    .col {
+        flex: 1 50%;
+        padding: 0 5px;
+      }
+    
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .paragraph {
+        order: -1;
+    }
+
+    .main-nav{
+        padding-bottom: 40px;
+    }
+
+    li{
+        color: black;
+        padding: 10px;
+        display: block;
+        margin: 10px;
+        font-family: 'Pacifico', cursive;
+    }
+
+    p {
+        align-items: center;
+    }
+
+    .header-image {
+        padding: 0 4px;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .home, 
+    .portfolio,
+    .contact,
+    .skill {
+        display: inline-block;
+        text-transform: uppercase;
+        padding-top: 19px;
+        justify-content: space-between;
+        align-items: initial;
+    }
+
+    .home {
+        padding-left: 300px;
+    }
+
+    .contact {
+        padding-right: 10px;
+    }
+
+    .main-nav  {
+        justify-content: center;
+    }
+
+    .name {
+        padding-left: 9px;
+    }
+   
+}
+
+  /* 1024px */
+
+  @media (min-width: 1024px) {
+    .main-header, 
+    .main-nav,
+    .row,
+    .paragraph,
+    .header-image,
+    .top-header {
+        display: flex;
+    }
+
+    .top-header,
+    .lower-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .home, 
+    .portfolio,
+    .contact,
+    .skill {
+        text-align: right;
+        font-size: 14px;
+        padding-top: 1.8%;
+    }
+
+    .image {
+        padding-right: 25px;
+    }
+
+    .home {
+        padding-left: 600px;
+    }
+
+    .col {
+        flex-basis: 0;
+        flex: 1 30%;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .header-name {
+        padding-left: 2%;
+    }
+
+    li{
+    padding:  0 10px;
+        }
+
+}
